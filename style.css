@@ -7,8 +7,9 @@ body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   background-color: #f3ffee;
 }
-#container {
+.container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -16,7 +17,8 @@ body {
   gap: 20px;
 }
 
-#formulario {
+.formulario_ovo,
+.formulario_frango {
   background-color: #75bff0;
   padding: 20px;
   border-radius: 5px 5px 0 0;
@@ -26,7 +28,7 @@ body {
   width: 250px;
 }
 
-#titulo {
+.titulo {
   font-size: 2rem;
   font-weight: 100;
   margin-bottom: 15px;
@@ -34,7 +36,7 @@ body {
   font-weight: bold;
 }
 
-#peso-text {
+.peso-text {
   display: flex;
   justify-content: center;
 }

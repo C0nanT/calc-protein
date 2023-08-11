@@ -13,37 +13,67 @@
 </head>
 
 <body>
-    <main id="container">
-        <section id="calculadora">
-            <form id="formulario">
-                <h1 id="titulo">
+    <main class="container">
+        <section class="calculadora">
+            <form class="formulario_ovo">
+                <h1 class="titulo">
                     Ovo
                 </h1>
                 <div class="input-box">
-                    <label id="peso-text" for="peso">
+                    <label class="peso-text" for="peso_ovo">
                         Peso em gramas
                     </label>
                     <div class="input input-a">
-                        <input type="number" id="peso">
+                        <input type="number" id="peso_ovo">
                         <span>/g</span>
                     </div>
                 </div>
-                <button id="botao">
+                <button class="botao">
                     Calcular
                 </button>
             </form>
-            <div id="result" class="resultado nao-ativo">
+            <div class="resultado nao-ativo result_ovo">
                 <div class="proteina-box">
-                    <span id="proteina_ovo"></span>
+                    <span class="proteina_ovo"></span>
                     <span class="pro">Proteína</span>
                 </div>
                 <div class="carbo-box">
-                    <span id="carbo_ovo"></span>
+                    <span class="carbo_ovo"></span>
                     <span class="car">Carbo</span>
                 </div>
             </div>
-
         </section>
+
+        <section class="calculadora">
+            <form class="formulario_frango">
+                <h1 class="titulo">
+                    Frango
+                </h1>
+                <div class="input-box">
+                    <label class="peso-text" for="peso_frango">
+                        Peso em gramas
+                    </label>
+                    <div class="input input-a">
+                        <input type="number" id="peso_frango">
+                        <span>/g</span>
+                    </div>
+                </div>
+                <button class="botao">
+                    Calcular
+                </button>
+            </form>
+            <div class="resultado nao-ativo result_frango">
+                <div class="proteina-box">
+                    <span class="proteina_frango"></span>
+                    <span class="pro">Proteína</span>
+                </div>
+                <div class="carbo-box">
+                    <span class="carbo_frango"></span>
+                    <span class="car">Carbo</span>
+                </div>
+            </div>
+        </section>
+
 
 
     </main>
