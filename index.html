@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Calculadora de Proteína</title>
+</head>
+
+<body>
+    <main id="container">
+        <section id="calculadora">
+            <form id="formulario">
+                <h1 id="titulo">
+                    Ovo
+                </h1>
+                <div class="input-box">
+                    <label id="peso-text" for="peso">
+                        Peso em gramas
+                    </label>
+                    <div class="input">
+                        <input type="number" id="peso" required>
+                        <span>/g</span>
+                    </div>
+                </div>
+                <button id="botao">
+                    Calcular
+                </button>
+            </form>
+            <div id="result" class="resultado nao-ativo">
+                <div class="proteina-box">
+                    <span id="proteina_r"></span>
+                    <span class="pro">Proteína</span>
+                </div>
+                <div class="carbo-box">
+                    <span id="carbo_r"></span>
+                    <span class="car">Carbo</span>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
