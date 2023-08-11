@@ -13,6 +13,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
+  gap: 20px;
 }
 
 #formulario {
@@ -22,6 +23,7 @@ body {
   display: grid;
   grid-column: column;
   gap: 5px;
+  width: 250px;
 }
 
 #titulo {
@@ -30,6 +32,11 @@ body {
   margin-bottom: 15px;
   text-align: center;
   font-weight: bold;
+}
+
+#peso-text {
+  display: flex;
+  justify-content: center;
 }
 
 .input-box label {
@@ -41,8 +48,9 @@ body {
   background-color: #b1d9f3;
   padding: 1px 5px;
   border-radius: 3px;
-  width: 50%;
   display: flex;
+  margin: 10px auto;
+  color: #7e9bad;
 }
 
 .input input {
@@ -76,6 +84,10 @@ button {
   color: #fff;
   padding: 8px 13px;
   border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .proteina-box,
