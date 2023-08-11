@@ -8,6 +8,7 @@
 <p>- Melhorar o visual geral</p>
 <p>- Substituir o input em cada calc por apenas 1 universal</p>
 <p>- Animações com CSS e JS<p>
+<p>- Talvez a conta inversa, um input com a quant. de proteina e da a quantidade de gramas, mas é um talvez beeeem improvável, depende da vontade :P<p>
 <h1>Tem alguma sugestão ? </h1>
 <h2>Envie para conantorreswf@gmail.com -- ou -- WhatsApp: 48 9 9990 4772</h2>
   
