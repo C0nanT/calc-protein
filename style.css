@@ -7,6 +7,40 @@ body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   background-color: #f3ffee;
 }
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  gap: 15px;
+  background-color: #96b7f5af;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 0 0 9px 9px;
+}
+
+.contato a {
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.insta:hover {
+  background-color: #e231aa;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.github:hover {
+  background-color: #333941;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.linkedin:hover {
+  background-color: #0e76a8;
+  border-radius: 8px;
+  transition: 0.5s;
+}
 .container {
   display: flex;
   flex-wrap: wrap;

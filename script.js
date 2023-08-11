@@ -33,6 +33,7 @@ function Calcular_frango() {
     carbo_frango.textContent = carbo;
   });
 }
+// --------------------------------------------------------------------------------------------------------------------
 
 Calcular_frango();
 Calcular_ovo();
