@@ -17,6 +17,7 @@ body {
   width: fit-content;
   margin: 0 auto;
   border-radius: 0 0 9px 9px;
+  margin-bottom: 25px;
 }
 
 .contato a {
@@ -52,7 +53,8 @@ body {
 }
 
 .formulario_ovo,
-.formulario_frango {
+.formulario_frango,
+.formulario_pao {
   background-color: #75bff0;
   padding: 20px;
   border-radius: 5px 5px 0 0;
