@@ -5,7 +5,6 @@
 }
 body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
-  background: linear-gradient(180deg, #4da7ff 0, #d7eaff 100%) no-repeat;
 }
 .contato {
   display: flex;
@@ -52,7 +51,8 @@ body {
 }
 
 .bg {
-  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #4da7ff 0, #d7eaff 100%) no-repeat;
 }
 
 .formulario {
@@ -118,6 +118,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .caixa {
   background: linear-gradient(180deg, #4da7ff 0%, #2480ff 100%);
