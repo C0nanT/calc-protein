@@ -13,101 +13,64 @@
 </head>
 
 <body>
-    <div class="contato">
-        <a class="insta" href="https://www.instagram.com/conantorres_/"><img src="./img/instagram.svg" alt="Link do instagram" width="40" height="40"></a>
-        <a class="github" href="https://github.com/C0nanT/"><img src="./img/github.svg" alt="Link do Github" width="40" height="40"></a>
-        <a class="linkedin" href="https://www.linkedin.com/in/conan-torres/"><img src="./img/linkedin.svg" alt="Link do Linkedin" width="40" height="40"></a>
-    </div>
-    <main class="container">
-        <section class="calculadora">
-            <form class="formulario_ovo">
-                <h1 class="titulo">
-                    Ovo
-                </h1>
-                <div class="input-box">
-                    <label class="peso-text" for="peso_ovo">
-                        Peso em gramas
-                    </label>
-                    <div class="input input-a">
-                        <input type="number" id="peso_ovo">
-                        <span>/g</span>
-                    </div>
+    <div class="bg">
+        <div class="contato">
+            <a class="insta" href="https://www.instagram.com/conantorres_/"><img src="./img/instagram.svg" alt="Link do instagram" width="40" height="40"></a>
+            <a class="github" href="https://github.com/C0nanT/"><img src="./img/github.svg" alt="Link do Github" width="40" height="40"></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/conan-torres/"><img src="./img/linkedin.svg" alt="Link do Linkedin" width="40" height="40"></a>
+        </div>
+        <section class="input-box container">
+            <form class="formulario">
+                <label class="peso-text" for="peso">
+                    Peso em gramas
+                </label>
+                <div class="input">
+                    <input type="number" id="peso">
                 </div>
                 <button class="botao">
                     Calcular
                 </button>
             </form>
-            <div class="resultado nao-ativo result_ovo">
-                <div class="proteina-box">
-                    <span class="proteina_ovo"></span>
-                    <span class="pro">Proteína</span>
-                </div>
-                <div class="carbo-box">
-                    <span class="carbo_ovo"></span>
-                    <span class="car">Carbo</span>
-                </div>
-            </div>
         </section>
+        <main class="container">
+            <section class="resultado nao-ativo">
+                <div class="caixa">
+                    <h2 class="produto">Pão</h2>
+                    <div class="proteina-box">
+                        <span class="proteina_pao"></span>
+                        <span class="pro">Proteína</span>
+                    </div>
+                    <div class="carbo-box">
+                        <span class="carbo_pao"></span>
+                        <span class="car">Carbo</span>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <h2 class="produto">Ovo</h2>
+                    <div class="proteina-box">
+                        <span class="proteina_ovo"></span>
+                        <span class="pro">Proteína</span>
+                    </div>
+                    <div class="carbo-box">
+                        <span class="carbo_ovo"></span>
+                        <span class="car">Carbo</span>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <h2 class="produto">Frango</h2>
+                    <div class="proteina-box">
+                        <span class="proteina_frango"></span>
+                        <span class="pro">Proteína</span>
+                    </div>
+                    <div class="carbo-box">
+                        <span class="carbo_frango"></span>
+                        <span class="car">Carbo</span>
+                    </div>
+                </div>
 
-        <section class="calculadora">
-            <form class="formulario_frango">
-                <h1 class="titulo">
-                    Frango
-                </h1>
-                <div class="input-box">
-                    <label class="peso-text" for="peso_frango">
-                        Peso em gramas
-                    </label>
-                    <div class="input input-a">
-                        <input type="number" id="peso_frango">
-                        <span>/g</span>
-                    </div>
-                </div>
-                <button class="botao">
-                    Calcular
-                </button>
-            </form>
-            <div class="resultado nao-ativo result_frango">
-                <div class="proteina-box">
-                    <span class="proteina_frango"></span>
-                    <span class="pro">Proteína</span>
-                </div>
-                <div class="carbo-box">
-                    <span class="carbo_frango"></span>
-                    <span class="car">Carbo</span>
-                </div>
-            </div>
-        </section>
-        <section class="calculadora">
-            <form class="formulario_pao">
-                <h1 class="titulo">
-                    Pão de forma
-                </h1>
-                <div class="input-box">
-                    <label class="peso-text" for="peso_pao">
-                        Peso em gramas
-                    </label>
-                    <div class="input input-a">
-                        <input type="number" id="peso_pao">
-                        <span>/g</span>
-                    </div>
-                </div>
-                <button class="botao">
-                    Calcular
-                </button>
-            </form>
-            <div class="resultado nao-ativo result_pao">
-                <div class="proteina-box">
-                    <span class="proteina_pao"></span>
-                    <span class="pro">Proteína</span>
-                </div>
-                <div class="carbo-box">
-                    <span class="carbo_pao"></span>
-                    <span class="car">Carbo</span>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
     <!-- Já que veio ver o código, aproveita e me segue no insta/linkedin ;D
         Insta: www.instagram.com/conantorres_/
         Linkedin: www.linkedin.com/in/conan-torres/

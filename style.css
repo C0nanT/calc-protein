@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
-  background-color: #f3ffee;
+  background: linear-gradient(180deg, #4da7ff 0, #d7eaff 100%) no-repeat;
 }
 .contato {
   display: flex;
@@ -13,7 +13,7 @@ body {
   align-items: center;
   padding: 3px;
   gap: 15px;
-  background-color: #96b7f5af;
+  background: linear-gradient(180deg, #86c6ff 0, #d7eaff 100%) no-repeat;
   width: fit-content;
   margin: 0 auto;
   border-radius: 0 0 9px 9px;
@@ -38,43 +38,37 @@ body {
 }
 
 .linkedin:hover {
-  background-color: #0e76a8;
+  background-color: #00bedc;
   border-radius: 8px;
   transition: 0.5s;
 }
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   gap: 20px;
 }
 
-.formulario_ovo,
-.formulario_frango,
-.formulario_pao {
-  background-color: #75bff0;
+.bg {
+  height: 100vh;
+}
+
+.formulario {
+  background: linear-gradient(180deg, #2480ff 0%, #0648ef 70%);
   padding: 20px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
   display: grid;
   grid-column: column;
   gap: 5px;
-  width: 250px;
-}
-
-.titulo {
-  font-size: 2rem;
-  font-weight: 100;
-  margin-bottom: 15px;
+  width: 100%;
+  color: #f4f8ff;
   text-align: center;
-  font-weight: bold;
 }
-
-.peso-text {
-  display: flex;
-  justify-content: center;
+.input-box {
+  margin-bottom: 50px;
+  gap: 0;
 }
 
 .input-box label {
@@ -83,19 +77,17 @@ body {
 }
 
 .input {
-  background-color: #b1d9f3;
+  background-color: #d5e4ff;
   padding: 1px 5px;
   border-radius: 3px;
   display: flex;
   margin: 10px auto;
-  color: #7e9bad;
 }
 
 .input input {
   background-color: transparent;
   border: none;
   font-size: 1.1rem;
-  width: 100%;
 }
 .input input::-webkit-inner-spin-button,
 .input input::-webkit-outer-spin-button {
@@ -106,34 +98,42 @@ body {
   outline: none;
 }
 
-.resultado {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  font-size: 20px;
-  padding: 10px 0;
-  border-radius: 0 0 5px 5px;
-  background-color: #96d2fa;
-}
-
 button {
   border: none;
-  background-color: #0068ad;
+  background: radial-gradient(circle, #4da7ff 0%, #0648ef 100%);
   color: #fff;
   padding: 8px 13px;
   border-radius: 5px;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  font-family: "roboto", sans-serif;
 }
 
 button:hover {
   cursor: pointer;
 }
 
-.proteina-box,
-.carbo-box {
-  display: grid;
-  gap: 4px;
-  font-family: "";
+.resultado {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.caixa {
+  background: linear-gradient(180deg, #4da7ff 0%, #2480ff 100%);
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 180px;
+  height: 120px;
+  border-radius: 9px;
+  border: #86c6ff 1px solid;
+  color: #02298b;
+}
+
 .nao-ativo {
   display: none;
 }
