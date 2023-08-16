@@ -78,6 +78,7 @@ function Calcular() {
     carbo_batata_doce.textContent = carbobatata_doce;
 
     // -----------ATUM-----------
+
     const proteinaatum = Proteina(0.2991);
     const carboatum = Carbo(0);
     const proteina_atum = document.querySelector(".proteina_atum");
@@ -86,6 +87,7 @@ function Calcular() {
     carbo_atum.textContent = carboatum;
 
     // -----------SALMAO-----------
+
     const proteinasalmao = Proteina(0.2042);
     const carbosalmao = Carbo(0);
     const proteina_salmao = document.querySelector(".proteina_salmao");

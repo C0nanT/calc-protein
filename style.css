@@ -6,6 +6,7 @@
 body {
   font-family: "IBM Plex Mono", monospace;
 }
+
 .aviso {
   position: absolute;
   max-width: 300px;
@@ -71,6 +72,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   gap: 20px;
+  background-size: cover;
 }
 
 .bg {
@@ -145,6 +147,12 @@ button:hover {
   flex-wrap: wrap;
   max-width: 900px;
 }
+
+.produto {
+  font-size: 30px;
+  flex-basis: 100%;
+  text-align: center;
+}
 .caixa {
   background: linear-gradient(180deg, #4da7ff 0%, #2480ff 100%);
   padding: 20px;
@@ -153,16 +161,11 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  width: 190px;
+  width: 202px;
   height: 120px;
   border-radius: 9px;
   border: #86c6ff 1px solid;
   color: #02298b;
-  transition: 0.8s;
-}
-
-.caixa:hover {
-  scale: 1.2;
 }
 
 .nao-ativo {
@@ -177,7 +180,6 @@ button:hover {
 
 .footer p {
   padding: 10px;
-
   text-align: end;
 }
 
@@ -185,4 +187,62 @@ button:hover {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+/* --------FLIP-------- */
+
+.caixa_flip {
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.caixa_flip img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 9px;
+  /* height: 400px; */
+  bottom: 0;
+  object-position: left bottom;
+}
+
+.caixa {
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa_front,
+.caixa_back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  backface-visibility: hidden;
+  font-size: 18px;
+}
+
+.caixa_flip:hover .caixa {
+  transform: rotateY(-180deg);
+  scale: 1.15;
+}
+
+.caixa_back {
+  transform: rotateY(-180deg);
+}
+
+@media (max-width: 525px) {
+  .footer {
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+  }
+  .footer p {
+    text-align: center;
+  }
+  .aviso {
+    font-size: 0.68rem;
+  }
 }
