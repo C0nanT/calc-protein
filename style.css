@@ -52,7 +52,7 @@ body {
 .insta:hover {
   background-color: #e231aa;
   border-radius: 8px;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 .github:hover {
@@ -267,10 +267,10 @@ button:hover {
   .contato img {
     width: 25px;
     height: 25px;
-    transition: 1s;
   }
 
   .contato:hover img {
-    height: 50px;
+    height: 45px;
+    transition: 1s;
   }
 }
