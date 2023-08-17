@@ -246,6 +246,7 @@ button:hover {
   }
   .aviso {
     font-size: 0.68rem;
+    z-index: 1;
   }
   .caixa {
     width: 185px;
