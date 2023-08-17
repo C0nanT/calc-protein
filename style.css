@@ -34,7 +34,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  padding: 3px;
+  padding: 4px;
   gap: 15px;
   background: linear-gradient(180deg, #86c6ff 0, #d7eaff 100%) no-repeat;
   width: fit-content;
@@ -45,13 +45,14 @@ body {
 
 .contato a {
   padding: 4px;
+  padding-bottom: 1px;
   border-radius: 8px;
 }
 
 .insta:hover {
   background-color: #e231aa;
   border-radius: 8px;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .github:hover {
@@ -192,8 +193,8 @@ button:hover {
 /* --------FLIP-------- */
 
 .caixa_flip {
-  perspective: 1000px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .caixa_flip img {
@@ -227,6 +228,7 @@ button:hover {
 .caixa_flip:hover .caixa {
   transform: rotateY(-180deg);
   scale: 1.15;
+  overflow: visible;
 }
 
 .caixa_back {
@@ -244,5 +246,31 @@ button:hover {
   }
   .aviso {
     font-size: 0.68rem;
+  }
+  .caixa {
+    width: 185px;
+    height: 100px;
+  }
+  .produto {
+    font-size: 20px;
+  }
+  .proteina-box,
+  .carbo-box {
+    font-size: 15px;
+  }
+  .contato {
+    margin: 0 10px 25px auto;
+  }
+  .formulario {
+    scale: 0.8;
+  }
+  .contato img {
+    width: 25px;
+    height: 25px;
+    transition: 1s;
+  }
+
+  .contato:hover img {
+    height: 50px;
   }
 }
