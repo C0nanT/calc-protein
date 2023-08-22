@@ -1,68 +1,85 @@
 const peso = document.getElementById("peso");
-
 const alimentos = [
   {
     nome: "OVO",
-    proteina: 0.12581,
-    carbo: 0.00771,
+    proteina: 0.13381,
+    carbo: 0.00601,
+    preco: 0.12,
     proteinaClass: ".proteina_ovo",
     carboClass: ".carbo_ovo",
+    precoClass: ".preco_ovo",
   },
   {
     nome: "PÃO",
-    proteina: 0.0764,
-    carbo: 0.5061,
+    proteina: 0.0924,
+    carbo: 0.4661,
+    preco: 0.16,
     proteinaClass: ".proteina_pao",
     carboClass: ".carbo_pao",
+    precoClass: ".preco_pao",
   },
   {
     nome: "FRANGO",
-    proteina: 0.32,
+    proteina: 0.27,
     carbo: 0,
+    preco: 0.04,
     proteinaClass: ".proteina_frango",
     carboClass: ".carbo_frango",
+    precoClass: ".preco_frango",
   },
   {
     nome: "MACARRÃO",
-    proteina: 0.0515,
-    carbo: 0.2751,
+    proteina: 0.1115,
+    carbo: 0.7625,
+    preco: 0.11,
     proteinaClass: ".proteina_macarrao",
     carboClass: ".carbo_macarrao",
+    precoClass: ".preco_macarrao",
   },
   {
     nome: "ARROZ",
     proteina: 0.0258,
     carbo: 0.2351,
+    preco: 999,
     proteinaClass: ".proteina_arroz",
     carboClass: ".carbo_arroz",
+    precoClass: ".preco_arroz",
   },
   {
     nome: "AVEIA",
     proteina: 0.1689,
     carbo: 0.6627,
+    preco: 999,
     proteinaClass: ".proteina_aveia",
     carboClass: ".carbo_aveia",
+    precoClass: ".preco_aveia",
   },
   {
     nome: "BATATA-DOCE",
     proteina: 0.0157,
     carbo: 0.2012,
+    preco: 999,
     proteinaClass: ".proteina_batata_doce",
     carboClass: ".carbo_batata_doce",
+    precoClass: ".preco_batata_doce",
   },
   {
     nome: "ATUM",
     proteina: 0.2991,
     carbo: 0,
+    preco: 999,
     proteinaClass: ".proteina_atum",
     carboClass: ".carbo_atum",
+    precoClass: ".preco_atum",
   },
   {
     nome: "SALMÃO",
     proteina: 0.2042,
     carbo: 0,
+    preco: 999,
     proteinaClass: ".proteina_salmao",
     carboClass: ".carbo_salmao",
+    precoClass: ".preco_salmao",
   },
 ];
 
@@ -71,12 +88,15 @@ function calcularValoresAlimento(alimento) {
     (peso.value * alimento.proteina).toFixed(2).replace(".", ",") + "g";
   const carboCalculado =
     (peso.value * alimento.carbo).toFixed(2).replace(".", ",") + "g";
+  const precoValor = ("R$" + alimento.preco).replace(".", ",");
 
   const proteinaElement = document.querySelector(alimento.proteinaClass);
   const carboElement = document.querySelector(alimento.carboClass);
+  const precoElement = document.querySelector(alimento.precoClass);
 
   proteinaElement.textContent = proteinaCalculada;
   carboElement.textContent = carboCalculado;
+  precoElement.textContent = precoValor;
 }
 
 function Calcular() {
@@ -94,7 +114,14 @@ function Calcular() {
 }
 
 Calcular();
+// ---------------------A FUNÇÃO CalcularPrecoPorGrama AINDA NÃO ESTÁ PRONTA------------------------------------------------------------
+// Pretendo automatizar ela também, no momento ela só funciona chamando no Console
 
+function CalcularPrecoPorGrama(preco, peso, proteina) {
+  const preco100g = (preco * 100) / peso;
+  const precoPorGrama = preco100g / proteina;
+  return precoPorGrama;
+}
 // ------------------------------------------------------------------------------------------------
 
 // Essa é a primeira versão do código JS para a página, deixei apenas para guardar de recordação :D

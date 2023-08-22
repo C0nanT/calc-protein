@@ -201,7 +201,6 @@ button:hover {
   object-fit: cover;
   width: 100%;
   border-radius: 9px;
-  /* height: 400px; */
   bottom: 0;
   object-position: left bottom;
 }
@@ -222,7 +221,7 @@ button:hover {
   flex-wrap: wrap;
   position: absolute;
   backface-visibility: hidden;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .caixa_flip:hover .caixa {
@@ -259,6 +258,7 @@ button:hover {
   .carbo-box {
     font-size: 15px;
   }
+
   .contato {
     margin: 0 10px 25px auto;
   }
