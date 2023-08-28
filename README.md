@@ -10,6 +10,6 @@
 <p>- Talvez a conta inversa, um input com a quant. de proteína e responde com a quantidade em gramas, mas é um talvez difícil.<p>
 <p>- Atualização automática dos preços baseados nos preços do site do Brasil Atacadista - Florianópolis<p>
 <h1>Tem alguma sugestão ? </h1>
-<h2>Envie para conantorreswf@gmail.com -- ou -- WhatsApp: 48 9 9990 4772</h2>
+<h2>Envie para conantorreswf@gmail.com -- ou -- WhatsApp: 48 9 9990-4772</h2>
   
 <p>Tecnologias: HTML, CSS e JS</p>
